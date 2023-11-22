@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    width: fit-content;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dice {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+
+.dice-dot {
+    --top: 0%;
+    --left: 0%;
+
+    width: 15px;
+    height: 15px;
+    background-color:black;
+    border-radius: 50%;
+
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    transform: translateX(calc(var(--left) * -1)) translateY(calc(var(--top) * -1));
+
+}
+
+.btn {
+    margin-top: 10px;
+    width: 160px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color:white;
+}
+
+.roll-btn:hover{
+    font-size: 1rem;
+}
+
+.inputf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input{
+    width: 153.4px;
+    line-height: 20px;
+    
+}
